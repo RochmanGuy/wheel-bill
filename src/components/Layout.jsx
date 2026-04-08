@@ -36,6 +36,11 @@ export default function Layout({ children }) {
         {children}
       </main>
 
+      {/* Accessibility Footer */}
+      <div className="pb-16 bg-slate-100 text-center py-2 border-t border-gray-200">
+        <Link to="/accessibility" className="text-xs text-gray-500 underline focus:ring-2 focus:ring-blue-500 focus:outline-none rounded">הצהרת נגישות</Link>
+      </div>
+
       {/* Bottom Nav */}
       <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex shadow-lg z-50" aria-label="ניווט ראשי">
         {NAV_ITEMS.map(item => {

@@ -7,6 +7,7 @@ import SettingsPage from './pages/settings/SettingsPage'
 import EventsPage from './pages/events/EventsPage'
 import EventFormPage from './pages/events/EventFormPage'
 import ReportsPage from './pages/ReportsPage'
+import AccessibilityPage from './pages/AccessibilityPage'
 import Layout from './components/Layout'
 
 function ProtectedRoute({ children }) {
@@ -27,6 +28,7 @@ function AppRoutes() {
       <Route path="/events/new" element={<ProtectedRoute><Layout><EventFormPage /></Layout></ProtectedRoute>} />
       <Route path="/events/:id" element={<ProtectedRoute><Layout><EventFormPage /></Layout></ProtectedRoute>} />
       <Route path="/reports" element={<ProtectedRoute><Layout><ReportsPage /></Layout></ProtectedRoute>} />
+      <Route path="/accessibility" element={<AccessibilityPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

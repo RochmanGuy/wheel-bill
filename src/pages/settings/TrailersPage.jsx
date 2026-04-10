@@ -155,7 +155,7 @@ export default function TrailersPage() {
 
       {editing && (
         <div className="fixed inset-0 bg-black/50 flex items-end z-50" onClick={closeForm} role="dialog" aria-modal="true" aria-label={editing === 'new' ? 'הוספת נגרר חדש' : 'עריכת נגרר'}>
-          <div className="bg-white w-full rounded-t-3xl p-5 max-h-[90vh] overflow-y-auto pb-safe" onClick={e => e.stopPropagation()}>
+          <div className="bg-white w-full rounded-t-3xl p-5 max-h-[90vh] overflow-y-auto" style={{paddingBottom: '80px'}} onClick={e => e.stopPropagation()}>
             <h2 className="text-lg font-bold text-gray-800 mb-4">{editing === 'new' ? 'נגרר חדש' : 'עריכה'}</h2>
             <div className="space-y-3">
               <div>

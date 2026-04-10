@@ -85,7 +85,7 @@ export default function DriversPage() {
       {/* Modal */}
       {editing && (
         <div className="fixed inset-0 bg-black/50 flex items-end z-50" onClick={closeForm}>
-          <div className="bg-white w-full rounded-t-3xl p-6 max-h-[85vh] overflow-y-auto pb-safe" onClick={e => e.stopPropagation()}>
+          <div className="bg-white w-full rounded-t-3xl p-6 max-h-[85vh] overflow-y-auto" style={{paddingBottom: '80px'}} onClick={e => e.stopPropagation()}>
             <h2 className="text-lg font-bold text-gray-800 mb-4">{editing === 'new' ? 'נהג חדש' : 'עריכת נהג'}</h2>
             <div className="space-y-3">
               <div>

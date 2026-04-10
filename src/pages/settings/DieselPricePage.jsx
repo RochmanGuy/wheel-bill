@@ -91,7 +91,7 @@ export default function DieselPricePage() {
                 )}
               </div>
             </div>
-            <div className="flex gap-3 mt-5">
+            <div className="flex gap-3 mt-5 sticky bottom-0 bg-white pt-3 pb-2 border-t border-gray-100">
               <button onClick={save} className="flex-1 bg-blue-700 text-white py-3 rounded-xl font-semibold focus:ring-2 focus:ring-blue-300 focus:outline-none">שמור</button>
               <button onClick={() => setShowForm(false)} className="flex-1 bg-gray-100 text-gray-600 py-3 rounded-xl focus:ring-2 focus:ring-gray-400 focus:outline-none">ביטול</button>
             </div>

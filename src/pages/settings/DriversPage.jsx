@@ -85,7 +85,7 @@ export default function DriversPage() {
       {/* Modal */}
       {editing && (
         <div className="fixed inset-0 bg-black/50 flex items-end z-50" onClick={closeForm}>
-          <div className="bg-white w-full rounded-t-3xl p-6 max-h-[80vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+          <div className="bg-white w-full rounded-t-3xl p-6 max-h-[85vh] overflow-y-auto pb-safe" onClick={e => e.stopPropagation()}>
             <h2 className="text-lg font-bold text-gray-800 mb-4">{editing === 'new' ? 'נהג חדש' : 'עריכת נהג'}</h2>
             <div className="space-y-3">
               <div>
@@ -116,7 +116,7 @@ export default function DriversPage() {
                   className="w-full border rounded-xl px-3 py-2 mt-1 text-right" rows={2} />
               </div>
             </div>
-            <div className="flex gap-3 mt-5">
+            <div className="flex gap-3 mt-5 sticky bottom-0 bg-white pt-3 pb-2 border-t border-gray-100">
               <button onClick={save} className="flex-1 bg-blue-700 text-white py-3 rounded-xl font-semibold">שמור</button>
               <button onClick={closeForm} className="flex-1 bg-gray-100 text-gray-600 py-3 rounded-xl">ביטול</button>
             </div>
